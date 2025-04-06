@@ -1,0 +1,25 @@
+{
+  "type": "module",
+  "name": "drizzle-migration-reproduction",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "db:migrate": "tsx ./drizzle/migrate.ts",
+    "db:seed": "tsx ./drizzle/seed.ts",
+    "clean": "rm -r ./local",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Samuel Jensen",
+  "license": "MIT",
+  "description": "",
+  "devDependencies": {
+    "@total-typescript/tsconfig": "1.0.4",
+    "drizzle-kit": "0.30.6",
+    "tsx": "4.19.3"
+  },
+  "dependencies": {
+    "@libsql/client": "0.15.2",
+    "dotenv": "16.4.7",
+    "drizzle-orm": "0.41.0"
+  }
+}
